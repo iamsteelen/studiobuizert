@@ -1,0 +1,418 @@
+{
+  "form": {
+    "control": {
+      "checkbox": {
+        "not-selected": {
+          "rest": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.not-selected.rest.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.rest-clear.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.rest-clear.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.rest-clear.foreground}"
+              }
+            }
+          },
+          "hover": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.not-selected.hover.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.hover.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.hover.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.hover.foreground}"
+              }
+            }
+          },
+          "pressed": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.not-selected.pressed.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.pressed.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.pressed.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.pressed.foreground}"
+              }
+            }
+          },
+          "disabled": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.not-selected.disabled.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.interactive.disabled.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.interactive.disabled.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.interactive.disabled.foreground}"
+              }
+            }
+          },
+          "inactive": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.not-selected.inactive.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.inactive.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.inactive.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.inactive.foreground}"
+              }
+            }
+          }
+        },
+        "selected": {
+          "rest": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.selected.rest.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.rest-amplified.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.rest-amplified.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.rest-amplified.foreground}"
+              }
+            }
+          },
+          "hover": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.selected.hover.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.hover-amplified.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.hover-amplified.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.hover-amplified.foreground}"
+              }
+            }
+          },
+          "pressed": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.selected.pressed.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.pressed.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.pressed.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.pressed.foreground}"
+              }
+            }
+          },
+          "disabled": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.selected.disabled.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.interactive.disabled.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.interactive.disabled.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.interactive.disabled.foreground}"
+              }
+            }
+          },
+          "inactive": {
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.selected.inactive.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            },
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.inactive.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.inactive.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.inactive.foreground}"
+              }
+            }
+          }
+        },
+        "border-radius": {
+          "type": "dimension",
+          "value": "{density.interaction.radius.sm}"
+        },
+        "border-width": {
+          "type": "dimension",
+          "value": "{density.interaction.border-width.default}"
+        },
+        "padding": {
+          "type": "dimension",
+          "value": "{density.interaction.space.2}"
+        },
+        "focus": {
+          "border-radius": {
+            "type": "dimension",
+            "value": "{form.control.checkbox.border-radius} + {density.interaction.focus.offset}"
+          }
+        },
+        "size": {
+          "type": "dimension",
+          "value": "{density.interaction.control.default.size}"
+        },
+        "icon": {
+          "size": {
+            "type": "dimension",
+            "value": "{density.interaction.control.default.size} - 0.5rem"
+          }
+        },
+        "indeterminate": {
+          "rest": {
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.rest-clear.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.rest-clear.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.rest-clear.foreground}"
+              }
+            },
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.indeterminate.rest.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            }
+          },
+          "hover": {
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.hover-amplified.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.hover-amplified.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.hover-amplified.foreground}"
+              }
+            },
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.indeterminate.hover.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            }
+          },
+          "pressed": {
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.pressed.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.pressed.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.pressed.foreground}"
+              }
+            },
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.indeterminate.pressed.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            }
+          },
+          "disabled": {
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.interactive.disabled.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.interactive.disabled.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.interactive.disabled.foreground}"
+              }
+            },
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.indeterminate.disabled.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            }
+          },
+          "inactive": {
+            "background-color": {
+              "type": "color",
+              "value": "{mode.color.input.inactive.container}"
+            },
+            "border-color": {
+              "type": "color",
+              "value": "{mode.color.input.inactive.stroke}"
+            },
+            "icon": {
+              "color": {
+                "type": "color",
+                "value": "{mode.color.input.inactive.foreground}"
+              }
+            },
+            "border": {
+              "type": "border",
+              "value": {
+                "color": "{form.control.checkbox.indeterminate.inactive.border-color}",
+                "width": "{form.control.checkbox.border-width}",
+                "style": "solid"
+              }
+            }
+          }
+        }
+      },
+      "not-selected": {
+        "icon": {
+          "visible": {
+            "type": "boolean",
+            "value": "false"
+          }
+        }
+      },
+      "selected": {
+        "icon": {
+          "visible": {
+            "type": "boolean",
+            "value": "true"
+          }
+        }
+      }
+    }
+  }
+}

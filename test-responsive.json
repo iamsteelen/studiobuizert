@@ -1,0 +1,14 @@
+{
+  "responsive": {
+    "scale": {
+      "multiplier": {
+        "value": "{brand.dimension-scale.multiplier.responsive-standard}",
+        "type": "number"
+      }
+    },
+    "rem-value": {
+      "value": "{brand.dimension-scale.rem-value.responsive-standard}",
+      "type": "number"
+    }
+  }
+}

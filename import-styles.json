@@ -1,0 +1,22 @@
+{
+  "brand-accent-gradient": {
+    "value": "linear-gradient(225deg, {brand.color.light.accent.2} 0%, {brand.color.light.accent.4} 16.67%, {brand.color.light.accent.6} 33.33%, {brand.color.light.accent.8} 50%, {brand.color.light.accent.6} 66.67%, {brand.color.light.accent.4} 83.33%, {brand.color.light.accent.2} 100%)",
+    "type": "color"
+  },
+  "brand-success-gradient": {
+    "value": "linear-gradient(225deg, {brand.color.light.success.2} 0%, {brand.color.light.success.4} 16.67%, {brand.color.light.success.6} 33.33%, {brand.color.light.success.8} 50%, {brand.color.light.success.6} 66.67%, {brand.color.light.success.4} 83.33%, {brand.color.light.success.2} 100%)",
+    "type": "color"
+  },
+  "brand-accent-gradient-dark": {
+    "value": "linear-gradient(219deg, {brand.color.light.accent.2} 0%, {brand.color.light.accent.4} 25%, {brand.color.light.accent.6} 50%, {brand.color.light.accent.4} 75%, {brand.color.light.accent.2} 100%)",
+    "type": "color"
+  },
+  "brand-accent-gradient-dark-copy": {
+    "value": "linear-gradient(219deg, {brand.color.light.accent.2} 0%, {brand.color.light.accent.4} 25%, {brand.color.light.accent.6} 50%, {brand.color.light.accent.4} 75%, {brand.color.light.accent.2} 100%)",
+    "type": "color"
+  },
+  "brand-positive-gradient-dark": {
+    "value": "linear-gradient(219deg, {brand.color.light.success.2} 0%, {brand.color.light.success.4} 25%, {brand.color.light.success.6} 50%, {brand.color.light.success.4} 75%, {brand.color.light.success.2} 100%)",
+    "type": "color"
+  }
+}

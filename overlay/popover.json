@@ -1,0 +1,120 @@
+{
+  "overlay": {
+    "popover": {
+      "background-color": {
+        "type": "color",
+        "value": "{mode.color.neutral.container.minimal}"
+      },
+      "arrow-fill": {
+        "type": "color",
+        "value": "{mode.color.neutral.container.minimal}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{mode.color.neutral.container.alpha-faint}"
+      },
+      "title": {
+        "text-color": {
+          "value": "{mode.color.neutral.foreground.clear}",
+          "type": "color"
+        },
+        "typography": {
+          "value": "{theme.text-style.content.title.default}",
+          "type": "typography"
+        }
+      },
+      "description": {
+        "text-color": {
+          "value": "{mode.color.neutral.foreground.clear}",
+          "type": "color"
+        },
+        "typography": {
+          "value": "{theme.text-style.content.description.default}",
+          "type": "typography"
+        }
+      },
+      "border": {
+        "type": "border",
+        "value": {
+          "color": "{overlay.popover.border-color}",
+          "width": "{overlay.popover.border-width}",
+          "style": "solid"
+        }
+      },
+      "box-shadow": {
+        "type": "boxShadow",
+        "value": "{surface.elevation.panels.small-overlay.low}"
+      },
+      "border-width": {
+        "type": "dimension",
+        "value": "{density.interaction.border-width.default}"
+      },
+      "border-radius": {
+        "type": "dimension",
+        "value": "{density.interaction.radius.lg}"
+      },
+      "padding-top": {
+        "type": "dimension",
+        "value": "{density.interaction.space.6}"
+      },
+      "padding-bottom": {
+        "type": "dimension",
+        "value": "{overlay.alert-dialog.content.padding-horizontal}"
+      },
+      "padding-horizontal": {
+        "type": "dimension",
+        "value": "{density.interaction.space.7}"
+      },
+      "gap": {
+        "type": "dimension",
+        "value": "{density.interaction.space.3}"
+      },
+      "width-max": {
+        "value": "{text-style.line-length-max.body.md} + {overlay.alert-dialog.content.padding-horizontal} + {overlay.alert-dialog.content.padding-horizontal}",
+        "type": "dimension"
+      },
+      "actions": {
+        "wrapper": {
+          "padding-horizontal": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          },
+          "padding-vertical": {
+            "type": "dimension",
+            "value": "{density.interaction.space.1}"
+          },
+          "gap": {
+            "value": "{density.interaction.space.7}",
+            "type": "dimension"
+          }
+        }
+      },
+      "text-wrapper": {
+        "padding-bottom": {
+          "value": "{density.interaction.space.3}",
+          "type": "dimension"
+        },
+        "padding-top": {
+          "value": "{density.interaction.space.none}",
+          "type": "dimension"
+        },
+        "padding-horizontal": {
+          "value": "{density.interaction.space.none}",
+          "type": "dimension"
+        },
+        "gap": {
+          "value": "{density.interaction.space.5}",
+          "type": "dimension"
+        }
+      },
+      "arrow-width": {
+        "value": "10px",
+        "type": "dimension"
+      },
+      "arrow-height": {
+        "value": "5px",
+        "type": "dimension"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "action": {
+    "toggle-group": {
+      "wrapper": {
+        "background-color": {
+          "type": "color",
+          "value": "{mode.color.neutral.container.dim}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{mode.color.neutral.container.alpha-glass}"
+        },
+        "border": {
+          "type": "border",
+          "value": {
+            "color": "{action.toggle-group.wrapper.border-color}",
+            "width": "{action.split-button.item.border-width}",
+            "style": "solid"
+          }
+        },
+        "box-shadow": {
+          "type": "boxShadow",
+          "value": "{surface.elevation.interaction.none}"
+        },
+        "border-radius": {
+          "type": "dimension",
+          "value": "{action.toggle-button.border-radius} + 2px"
+        },
+        "border-width": {
+          "type": "dimension",
+          "value": "{density.interaction.border-width.default}"
+        },
+        "gap": {
+          "type": "dimension",
+          "value": "{density.interaction.space.2}"
+        },
+        "height-min": {
+          "type": "dimension",
+          "value": "{density.interaction.size.touchpoint}"
+        },
+        "padding": {
+          "type": "dimension",
+          "value": "{density.interaction.space.2}"
+        }
+      },
+      "layout": {
+        "justify-content": {
+          "type": "other",
+          "value": "center",
+          "description": "There currently isn't a token to control this property so the value is pasted from Figma's output of CSS. Please inspect design file."
+        },
+        "align-items": {
+          "type": "other",
+          "value": "center",
+          "description": "There currently isn't a token to control this property so the value is pasted from Figma's output of CSS. Please inspect design file."
+        }
+      }
+    }
+  }
+}

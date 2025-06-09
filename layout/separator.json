@@ -1,0 +1,18 @@
+{
+  "layout": {
+    "separator": {
+      "margin": {
+        "type": "dimension",
+        "value": "{density.interaction.space.2}"
+      },
+      "size": {
+        "type": "dimension",
+        "value": "{density.interaction.border-width.default}"
+      },
+      "background-color": {
+        "type": "color",
+        "value": "{mode.color.neutral.container.alpha-highlight}"
+      }
+    }
+  }
+}

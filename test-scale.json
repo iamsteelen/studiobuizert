@@ -1,0 +1,213 @@
+{
+  "scale": {
+    "multiplier": {
+      "type": "number",
+      "value": "{responsive.scale.multiplier}"
+    },
+    "base": {
+      "type": "number",
+      "value": "{rem-base}",
+      "description": "Tokens used as the default or \"mid-point\" in your scale will have this value without any changes. So when you adjust only the multiplier token, this is not affected."
+    },
+    "factor": {
+      "type": "number",
+      "value": "{brand.dimension-scale.grid-factor}"
+    },
+    "unitless": {
+      "3xs": {
+        "type": "number",
+        "value": "{scale.unitless.2xs} / 2",
+        "description": "This calculation is modified to avoid a zero value at this very small size. "
+      },
+      "2xs": {
+        "type": "number",
+        "value": "floor(roundTo({scale.unitless.xs} / {scale.multiplier}, 0) /{scale.factor}) * {scale.factor}"
+      },
+      "xs": {
+        "type": "number",
+        "value": "floor(roundTo({scale.unitless.sm} / {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "sm": {
+        "type": "number",
+        "value": "floor(roundTo({scale.unitless.md} / {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "md": {
+        "type": "number",
+        "value": "{scale.base}"
+      },
+      "lg": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.md} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.lg} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "2xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "3xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.2xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "4xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.3xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "5xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.4xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "6xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.5xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "7xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.6xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "8xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.7xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "9xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.8xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "10xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.9xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      }
+    },
+    "proportion": {
+      "minor-second": {
+        "type": "number",
+        "value": "1.067"
+      },
+      "major-second": {
+        "type": "number",
+        "value": "1.125"
+      },
+      "minor-third": {
+        "type": "number",
+        "value": "1.2"
+      },
+      "major-third": {
+        "type": "number",
+        "value": "1.25"
+      },
+      "perfect-fourth": {
+        "type": "number",
+        "value": "1.333"
+      },
+      "augmented-fourth": {
+        "type": "number",
+        "value": "1.414"
+      },
+      "perfect-fifth": {
+        "type": "number",
+        "value": "1.5"
+      },
+      "minor-sixth": {
+        "type": "number",
+        "value": "1.6"
+      },
+      "golden-ratio": {
+        "type": "number",
+        "value": "1.618"
+      },
+      "major-sixth": {
+        "type": "number",
+        "value": "1.667"
+      },
+      "minor-seventh": {
+        "type": "number",
+        "value": "1.778"
+      },
+      "major-seventh": {
+        "type": "number",
+        "value": "1.875"
+      },
+      "octave": {
+        "type": "number",
+        "value": "2"
+      },
+      "custom": {
+        "value": "0",
+        "type": "number",
+        "description": "Update this value as needed"
+      }
+    },
+    "rem": {
+      "3xs": {
+        "type": "dimension",
+        "value": "{scale.unitless.3xs} / {rem-base} * 1rem"
+      },
+      "2xs": {
+        "type": "dimension",
+        "value": "{scale.unitless.2xs} / {rem-base} * 1rem"
+      },
+      "xs": {
+        "type": "dimension",
+        "value": "{scale.unitless.xs} / {rem-base} * 1rem"
+      },
+      "sm": {
+        "type": "dimension",
+        "value": "{scale.unitless.sm} / {rem-base} * 1rem"
+      },
+      "md": {
+        "type": "dimension",
+        "value": "{scale.unitless.md} / {rem-base} * 1rem"
+      },
+      "lg": {
+        "type": "dimension",
+        "value": "{scale.unitless.lg} / {rem-base} * 1rem"
+      },
+      "xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.xl} / {rem-base} * 1rem"
+      },
+      "2xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.2xl} / {rem-base} * 1rem"
+      },
+      "3xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.3xl} / {rem-base} * 1rem"
+      },
+      "4xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.4xl} / {rem-base} * 1rem"
+      },
+      "5xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.5xl} / {rem-base} * 1rem"
+      },
+      "6xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.6xl} / {rem-base} * 1rem"
+      },
+      "7xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.7xl} / {rem-base} * 1rem"
+      },
+      "8xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.8xl} / {rem-base} * 1rem"
+      },
+      "9xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.9xl} / {rem-base} * 1rem"
+      },
+      "10xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.10xl} / {rem-base} * 1rem"
+      }
+    }
+  },
+  "rem-base": {
+    "value": "{responsive.rem-value}",
+    "type": "number"
+  }
+}

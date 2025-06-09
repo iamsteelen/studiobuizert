@@ -1,0 +1,281 @@
+{
+  "form": {
+    "field": {
+      "header": {
+        "text-wrapper": {
+          "gap": {
+            "type": "dimension",
+            "value": "{density.interaction.space.2}"
+          },
+          "padding-horizontal": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          },
+          "padding-vertical": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          },
+          "line-length": {
+            "value": "{text-style.line-length-max.body.lg}",
+            "type": "dimension"
+          }
+        },
+        "horizontal": {
+          "gap": {
+            "type": "dimension",
+            "value": "{density.interaction.space.2}"
+          },
+          "padding-horizontal": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          },
+          "padding-vertical": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          }
+        },
+        "label": {
+          "color": {
+            "type": "color",
+            "value": "{mode.color.neutral.foreground.clear}"
+          },
+          "indicator-color": {
+            "value": "{mode.color.accent.foreground.amplified}",
+            "type": "color"
+          }
+        },
+        "helper": {
+          "color": {
+            "type": "color",
+            "value": "{mode.color.neutral.foreground.quiet}"
+          }
+        },
+        "vertical": {
+          "gap": {
+            "type": "dimension",
+            "value": "{density.interaction.space.2}"
+          },
+          "padding-horizontal": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          },
+          "padding-vertical": {
+            "type": "dimension",
+            "value": "{density.interaction.space.3}"
+          }
+        }
+      },
+      "label": {
+        "typography": {
+          "type": "typography",
+          "value": "{theme.text-style.form.label}"
+        }
+      },
+      "helper": {
+        "typography": {
+          "type": "typography",
+          "value": "{theme.text-style.form.helper}"
+        }
+      },
+      "character-count": {
+        "typograpy": {
+          "type": "typography",
+          "value": "{theme.text-style.info-display.character-count.sm}"
+        }
+      },
+      "validation-message": {
+        "typography": {
+          "type": "typography",
+          "value": "{theme.text-style.form.validation-message}"
+        },
+        "warning": {
+          "background-color": {
+            "type": "color",
+            "value": "{mode.color.danger.container.dim}"
+          },
+          "border-color": {
+            "type": "color",
+            "value": "{mode.color.danger.container.alpha-glass}"
+          },
+          "text": {
+            "color": {
+              "type": "color",
+              "value": "{mode.color.danger.foreground.clear}"
+            }
+          },
+          "border": {
+            "type": "border",
+            "value": {
+              "color": "{form.field.validation-message.warning.border-color}",
+              "width": "{form.field.validation-message.border-width}",
+              "style": "solid"
+            }
+          },
+          "icon": {
+            "color": {
+              "type": "color",
+              "value": "{mode.color.danger.foreground.clear}"
+            }
+          }
+        },
+        "success": {
+          "border": {
+            "type": "border",
+            "value": {
+              "color": "{form.field.validation-message.success.border-color}",
+              "width": "{form.field.validation-message.border-width}",
+              "style": "solid"
+            }
+          },
+          "background-color": {
+            "type": "color",
+            "value": "{mode.color.success.container.dim}"
+          },
+          "border-color": {
+            "type": "color",
+            "value": "{mode.color.success.container.alpha-glass}"
+          },
+          "text": {
+            "color": {
+              "type": "color",
+              "value": "{mode.color.success.foreground.muted}"
+            }
+          },
+          "icon": {
+            "color": {
+              "type": "color",
+              "value": "{mode.color.success.foreground.muted}"
+            }
+          }
+        },
+        "gap": {
+          "type": "dimension",
+          "value": "{density.interaction.space.3}"
+        },
+        "padding-horizontal": {
+          "type": "dimension",
+          "value": "{density.interaction.space.4}"
+        },
+        "padding-vertical": {
+          "type": "dimension",
+          "value": "{density.interaction.space.2}"
+        },
+        "border-radius": {
+          "type": "dimension",
+          "value": "{density.interaction.radius.md}"
+        },
+        "border-width": {
+          "type": "dimension",
+          "value": "{density.interaction.border-width.default}"
+        },
+        "width-max": {
+          "value": "{text-style.line-length-max.body.md} + {form.field.validation-message.gap} + {form.field.validation-message.icon.size} + {form.field.validation-message.padding-horizontal} + {form.field.validation-message.padding-horizontal}",
+          "type": "dimension",
+          "description": "Determined by the max line length of the text-style used in the message. If your typography is heavily customized, this may need to be adjusted. "
+        },
+        "info": {
+          "border": {
+            "type": "border",
+            "value": {
+              "color": "{form.field.validation-message.info.border-color}",
+              "width": "{form.field.validation-message.border-width}",
+              "style": "solid"
+            }
+          },
+          "background-color": {
+            "type": "color",
+            "value": "{mode.color.accent.container.transparent}"
+          },
+          "border-color": {
+            "type": "color",
+            "value": "{mode.color.accent.container.alpha-highlight}"
+          },
+          "text": {
+            "color": {
+              "type": "color",
+              "value": "{mode.color.accent.foreground.muted}"
+            }
+          },
+          "icon": {
+            "color": {
+              "type": "color",
+              "value": "{mode.color.accent.foreground.muted}"
+            }
+          }
+        },
+        "icon": {
+          "size": {
+            "type": "dimension",
+            "value": "{density.interaction.size.half}"
+          }
+        },
+        "icon-wrapper": {
+          "padding-vertical": {
+            "type": "dimension",
+            "value": "{density.interaction.space.1}"
+          },
+          "padding-horizontal": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          }
+        },
+        "count-wrapper": {
+          "padding-vertical": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          },
+          "gap": {
+            "type": "dimension",
+            "value": "{density.interaction.space.2}"
+          },
+          "padding-horizontal": {
+            "type": "dimension",
+            "value": "{density.interaction.space.none}"
+          }
+        }
+      },
+      "vertical": {
+        "gap": {
+          "type": "dimension",
+          "value": "{density.interaction.space.3}"
+        },
+        "padding-horizontal": {
+          "type": "dimension",
+          "value": "{density.interaction.space.none}"
+        },
+        "padding-vertical": {
+          "type": "dimension",
+          "value": "{density.interaction.space.none}"
+        }
+      },
+      "count": {
+        "text-display": {
+          "color": {
+            "type": "color",
+            "value": "{mode.color.neutral.foreground.clear}"
+          }
+        },
+        "limit": {
+          "color": {
+            "type": "color",
+            "value": "{mode.color.neutral.foreground.quiet}"
+          }
+        }
+      },
+      "horizontal": {
+        "gap": {
+          "type": "dimension",
+          "value": "{density.interaction.space.5}"
+        },
+        "padding-horizontal": {
+          "type": "dimension",
+          "value": "{density.interaction.space.none}"
+        },
+        "padding-vertical": {
+          "type": "dimension",
+          "value": "{density.interaction.space.none}"
+        }
+      }
+    }
+  }
+}

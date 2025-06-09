@@ -1,0 +1,112 @@
+{
+  "theme": {
+    "text-style": {
+      "label": {
+        "inline": {
+          "standard": {
+            "type": "typography",
+            "value": "{text-style.body.md.standard}"
+          },
+          "compact": {
+            "type": "typography",
+            "value": "{text-style.body.sm.standard}"
+          },
+          "interaction": {
+            "type": "typography",
+            "value": "{text-style.body.md.interactive}"
+          }
+        }
+      },
+      "form": {
+        "text-input": {
+          "type": "typography",
+          "value": "{text-style.body.md.standard}"
+        },
+        "label": {
+          "type": "typography",
+          "value": "{text-style.body.md.strong}"
+        },
+        "helper": {
+          "type": "typography",
+          "value": "{text-style.body.sm.standard}"
+        },
+        "select-item": {
+          "type": "typography",
+          "value": "{text-style.body.sm.standard}"
+        },
+        "select-label": {
+          "type": "typography",
+          "value": "{text-style.body.sm.standard}"
+        },
+        "validation-message": {
+          "type": "typography",
+          "value": "{text-style.body.md.standard}"
+        },
+        "interaction": {
+          "type": "typography",
+          "value": "{text-style.body.md.interactive}"
+        }
+      },
+      "system-status": {
+        "default": {
+          "type": "typography",
+          "value": "{text-style.body.md.standard}"
+        }
+      },
+      "info-display": {
+        "default": {
+          "type": "typography",
+          "value": "{text-style.statement.xs.standard}"
+        },
+        "subtle": {
+          "type": "typography",
+          "value": "{text-style.body.md.standard}"
+        },
+        "compact": {
+          "type": "typography",
+          "value": "{text-style.body.sm.interactive}"
+        },
+        "character-count": {
+          "sm": {
+            "value": "{brand-typography.p3.mono}",
+            "type": "typography"
+          }
+        }
+      },
+      "content": {
+        "info-graphic": {
+          "label": {
+            "md": {
+              "emphasis": {
+                "type": "typography",
+                "value": "{text-style.body.md.interactive}"
+              },
+              "default": {
+                "type": "typography",
+                "value": "{text-style.body.md.standard}"
+              }
+            }
+          },
+          "heading": {
+            "default": {
+              "type": "typography",
+              "value": "{text-style.statement.xs.standard}"
+            }
+          }
+        },
+        "title": {
+          "default": {
+            "value": "{text-style.statement.xs.standard}",
+            "type": "typography"
+          }
+        },
+        "description": {
+          "default": {
+            "value": "{text-style.body.md.standard}",
+            "type": "typography"
+          }
+        }
+      }
+    }
+  }
+}

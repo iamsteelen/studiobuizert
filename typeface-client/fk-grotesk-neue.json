@@ -1,0 +1,18 @@
+{
+  "fontFamilies": {
+    "fk-grotesk-neue": {
+      "type": "fontFamilies",
+      "value": "FK Grotesk Neue"
+    }
+  },
+  "fontWeights": {
+    "fk-grotesk-neue-regular": {
+      "type": "fontWeights",
+      "value": "Regular"
+    },
+    "fk-grotesk-neue-medium": {
+      "type": "fontWeights",
+      "value": "Medium"
+    }
+  }
+}

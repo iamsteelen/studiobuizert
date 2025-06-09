@@ -1,0 +1,78 @@
+{
+  "CATEGORY": {
+    "COMPONENT": {
+      "border-radius": {
+        "type": "dimension",
+        "value": "{density.interaction.radius.sm}"
+      },
+      "border-width": {
+        "type": "dimension",
+        "value": "{density.interaction.border-width.default}"
+      },
+      "gap": {
+        "type": "dimension",
+        "value": "{density.interaction.space.3}"
+      },
+      "height-min": {
+        "type": "dimension",
+        "value": "{density.interaction.size.touchpoint}"
+      },
+      "padding-vertical": {
+        "type": "dimension",
+        "value": "{density.interaction.space.2}"
+      },
+      "padding-horizontal": {
+        "type": "dimension",
+        "value": "{density.interaction.space.3}"
+      },
+      "width-min": {
+        "type": "dimension",
+        "value": "{density.interaction.size.touchpoint}"
+      },
+      "asset": {
+        "size": {
+          "type": "dimension",
+          "value": "16px"
+        }
+      },
+      "focus": {
+        "border-radius": {
+          "type": "dimension",
+          "value": "{CATEGORY.COMPONENT.border-radius} + {density.interaction.focus.offset}"
+        }
+      },
+      "background-color": {
+        "value": "{mode.color.accent.container.saturated}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{surface.color.info.container.highlight}",
+        "type": "color"
+      },
+      "text": {
+        "color": {
+          "value": "{surface-color.content.foreground.neutral.clear}",
+          "type": "color"
+        }
+      },
+      "icon": {
+        "color": {
+          "value": "{surface-color.content.foreground.neutral.clear}",
+          "type": "color"
+        }
+      },
+      "typography": {
+        "value": "{theme.text-style.label.inline.standard}",
+        "type": "typography"
+      },
+      "border": {
+        "value": {
+          "color": "{CATEGORY.COMPONENT.border-color}",
+          "width": "{CATEGORY.COMPONENT.border-width}",
+          "style": "solid"
+        },
+        "type": "border"
+      }
+    }
+  }
+}

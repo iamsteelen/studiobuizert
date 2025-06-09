@@ -1,0 +1,996 @@
+{
+  "rem-base": {
+    "value": "{responsive.rem-value}",
+    "type": "number"
+  },
+  "scale": {
+    "multiplier": {
+      "type": "number",
+      "value": "{responsive.scale.multiplier}"
+    },
+    "base": {
+      "type": "number",
+      "value": "{rem-base}",
+      "description": "Tokens used as the default or \"mid-point\" in your scale will have this value without any changes. So when you adjust only the multiplier token, this is not affected."
+    },
+    "factor": {
+      "type": "number",
+      "value": "{brand.dimension-scale.grid-factor}"
+    },
+    "unitless": {
+      "3xs": {
+        "type": "number",
+        "value": "{scale.unitless.2xs} / 2",
+        "description": "This calculation is modified to avoid a zero value at this very small size. "
+      },
+      "2xs": {
+        "type": "number",
+        "value": "floor(roundTo({scale.unitless.xs} / {scale.multiplier}, 0) /{scale.factor}) * {scale.factor}"
+      },
+      "xs": {
+        "type": "number",
+        "value": "floor(roundTo({scale.unitless.sm} / {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "sm": {
+        "type": "number",
+        "value": "floor(roundTo({scale.unitless.md} / {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "md": {
+        "type": "number",
+        "value": "{scale.base}"
+      },
+      "lg": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.md} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.lg} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "2xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "3xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.2xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "4xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.3xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "5xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.4xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "6xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.5xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "7xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.6xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "8xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.7xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "9xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.8xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      },
+      "10xl": {
+        "type": "number",
+        "value": "ceil(roundTo({scale.unitless.9xl} * {scale.multiplier}, 0) / {scale.factor}) * {scale.factor}"
+      }
+    },
+    "proportion": {
+      "minor-second": {
+        "type": "number",
+        "value": "1.067"
+      },
+      "major-second": {
+        "type": "number",
+        "value": "1.125"
+      },
+      "minor-third": {
+        "type": "number",
+        "value": "1.2"
+      },
+      "major-third": {
+        "type": "number",
+        "value": "1.25"
+      },
+      "perfect-fourth": {
+        "type": "number",
+        "value": "1.333"
+      },
+      "augmented-fourth": {
+        "type": "number",
+        "value": "1.414"
+      },
+      "perfect-fifth": {
+        "type": "number",
+        "value": "1.5"
+      },
+      "minor-sixth": {
+        "type": "number",
+        "value": "1.6"
+      },
+      "golden-ratio": {
+        "type": "number",
+        "value": "1.618"
+      },
+      "major-sixth": {
+        "type": "number",
+        "value": "1.667"
+      },
+      "minor-seventh": {
+        "type": "number",
+        "value": "1.778"
+      },
+      "major-seventh": {
+        "type": "number",
+        "value": "1.875"
+      },
+      "octave": {
+        "type": "number",
+        "value": "2"
+      },
+      "custom": {
+        "value": "0",
+        "type": "number",
+        "description": "Update this value as needed"
+      }
+    },
+    "rem": {
+      "3xs": {
+        "type": "dimension",
+        "value": "{scale.unitless.3xs} / {rem-base} * 1rem"
+      },
+      "2xs": {
+        "type": "dimension",
+        "value": "{scale.unitless.2xs} / {rem-base} * 1rem"
+      },
+      "xs": {
+        "type": "dimension",
+        "value": "{scale.unitless.xs} / {rem-base} * 1rem"
+      },
+      "sm": {
+        "type": "dimension",
+        "value": "{scale.unitless.sm} / {rem-base} * 1rem"
+      },
+      "md": {
+        "type": "dimension",
+        "value": "{scale.unitless.md} / {rem-base} * 1rem"
+      },
+      "lg": {
+        "type": "dimension",
+        "value": "{scale.unitless.lg} / {rem-base} * 1rem"
+      },
+      "xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.xl} / {rem-base} * 1rem"
+      },
+      "2xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.2xl} / {rem-base} * 1rem"
+      },
+      "3xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.3xl} / {rem-base} * 1rem"
+      },
+      "4xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.4xl} / {rem-base} * 1rem"
+      },
+      "5xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.5xl} / {rem-base} * 1rem"
+      },
+      "6xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.6xl} / {rem-base} * 1rem"
+      },
+      "7xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.7xl} / {rem-base} * 1rem"
+      },
+      "8xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.8xl} / {rem-base} * 1rem"
+      },
+      "9xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.9xl} / {rem-base} * 1rem"
+      },
+      "10xl": {
+        "type": "dimension",
+        "value": "{scale.unitless.10xl} / {rem-base} * 1rem"
+      }
+    }
+  },
+  "scale-text": {
+    "multiplier": {
+      "body": {
+        "type": "number",
+        "value": "{brand.text-styling.scale.proportional-multiplier.body}",
+        "description": "Change the value of this token to modify body text token in the scales."
+      },
+      "statement": {
+        "type": "number",
+        "value": "{brand.text-styling.scale.proportional-multiplier.statement}",
+        "description": "Change the value of this token to modify every token in the H-scales."
+      },
+      "display": {
+        "type": "number",
+        "value": "{brand.text-styling.scale.proportional-multiplier.display}",
+        "description": "Change the value of this token to modify every token in the D-scales."
+      }
+    },
+    "font-size": {
+      "body-sm": {
+        "type": "number",
+        "value": "floor(roundTo({scale-text.font-size.body-md} / {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}"
+      },
+      "body-md": {
+        "type": "number",
+        "value": "{rem-base}"
+      },
+      "body-lg": {
+        "value": "ceil(roundTo({scale-text.font-size.body-md} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "statement-xs": {
+        "value": "ceil(roundTo({scale-text.font-size.body-md} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "statement-sm": {
+        "value": "ceil(roundTo({scale-text.font-size.statement-xs} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "statement-md": {
+        "value": "ceil(roundTo({scale-text.font-size.statement-sm} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "statement-lg": {
+        "value": "ceil(roundTo({scale-text.font-size.statement-md} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "statement-xl": {
+        "value": "ceil(roundTo({scale-text.font-size.statement-lg} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "statement-2xl": {
+        "value": "ceil(roundTo({scale-text.font-size.statement-xl} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "display-sm": {
+        "value": "ceil(roundTo({scale-text.font-size.statement-2xl} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "display-md": {
+        "value": "ceil(roundTo({scale-text.font-size.display-sm} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      },
+      "display-lg": {
+        "value": "ceil(roundTo({scale-text.font-size.display-md} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+        "type": "number"
+      }
+    },
+    "factor": {
+      "font-size": {
+        "type": "number",
+        "value": "{brand.text-styling.scale.grid-factor.font-size}",
+        "description": "Calculated font-sizes will have a resolved pixel value that always sit on this grid, then converted to rem units for responsive design. "
+      },
+      "line-height": {
+        "value": "{brand.text-styling.scale.grid-factor.line-height}",
+        "type": "number",
+        "description": "Calculated line hights will have a resolved pixel value that always sit on this grid, then converted back to unitless number that acts as a multipler in code. "
+      }
+    },
+    "line-heights": {
+      "body": {
+        "tight": {
+          "value": "{brand.text-styling.line-height.unitless.body.tight}",
+          "type": "number"
+        },
+        "comfortable": {
+          "value": "{brand.text-styling.line-height.unitless.body.comfortable}",
+          "type": "number"
+        },
+        "relaxed": {
+          "value": "{brand.text-styling.line-height.unitless.body.relaxed}",
+          "type": "number"
+        }
+      },
+      "statement": {
+        "tight": {
+          "value": "{brand.text-styling.line-height.unitless.statement.tight}",
+          "type": "number"
+        },
+        "comfortable": {
+          "value": "{brand.text-styling.line-height.unitless.statement.comfortable}",
+          "type": "number"
+        },
+        "relaxed": {
+          "value": "{brand.text-styling.line-height.unitless.statement.relaxed}",
+          "type": "number"
+        }
+      },
+      "display": {
+        "tight": {
+          "value": "{brand.text-styling.line-height.unitless.display.tight}",
+          "type": "number"
+        },
+        "comfortable": {
+          "value": "{brand.text-styling.line-height.unitless.display.comfortable}",
+          "type": "number"
+        },
+        "relaxed": {
+          "value": "{brand.text-styling.line-height.unitless.display.relaxed}",
+          "type": "number"
+        }
+      },
+      "mono": {
+        "tight": {
+          "value": "{brand.text-styling.line-height.unitless.mono.tight}",
+          "type": "number"
+        },
+        "comfortable": {
+          "value": "{brand.text-styling.line-height.unitless.mono.comfortable}",
+          "type": "number"
+        },
+        "relaxed": {
+          "value": "{brand.text-styling.line-height.unitless.mono.relaxed}",
+          "type": "number"
+        }
+      }
+    },
+    "calculated": {
+      "body": {
+        "sm": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "{scale-text.calculated.body.sm.spacing.xs} / 2",
+              "description": "This calculation is modified to avoid a zero value at this very small size. "
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.body.sm.spacing.sm} / {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.body} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.body.sm.spacing.md} / {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.body} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.body-sm}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.sm.spacing.md} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.body} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.sm.spacing.lg} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.body} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.sm.spacing.xl} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.body} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-sm} * {scale-text.line-heights.body.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-sm}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-sm} * {scale-text.line-heights.body.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-sm}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-sm} * {scale-text.line-heights.body.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-sm}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "md": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.body.md.spacing.xs} / {scale-text.multiplier.body} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.body} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.body.md.spacing.sm} / {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.body} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.body.md.spacing.md} / {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.body} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.body-md}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.md.spacing.md} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.body} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.md.spacing.lg} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.body} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.md.spacing.xl} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.body} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-md} * {scale-text.line-heights.body.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-md}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-md} * {scale-text.line-heights.body.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-md}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-md} * {scale-text.line-heights.body.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-md}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "lg": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.body.lg.spacing.xs} / {scale-text.multiplier.body} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.body} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.body.lg.spacing.sm} / {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.body} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.body.lg.spacing.md} / {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.body} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.body-lg}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.lg.spacing.md} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.body} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.lg.spacing.lg} * {scale.multiplier}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.body} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.body.lg.spacing.xl} * {scale-text.multiplier.body}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.body} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-lg} * {scale-text.line-heights.body.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-lg}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-lg} * {scale-text.line-heights.body.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-lg}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.body-lg} * {scale-text.line-heights.body.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.body-lg}, 3)",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "statement": {
+        "xs": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.xs.spacing.xs} / {scale-text.multiplier.statement} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.heading} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.xs.spacing.sm} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.heading} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.xs.spacing.md} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.heading} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.statement-xs}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.xs.spacing.md} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.heading} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.xs.spacing.lg} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.heading} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.xs.spacing.xl} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.heading} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-xs} * {scale-text.line-heights.statement.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-xs}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-xs} * {scale-text.line-heights.statement.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-xs}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-xs} * {scale-text.line-heights.statement.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-xs}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "sm": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.sm.spacing.xs} / {scale-text.multiplier.statement} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.heading} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.sm.spacing.sm} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.heading} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.sm.spacing.md} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.heading} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.statement-sm}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.sm.spacing.md} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.heading} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.sm.spacing.lg} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.heading} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.sm.spacing.xl} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.heading} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-sm} * {scale-text.line-heights.statement.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-sm}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-sm} * {scale-text.line-heights.statement.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-sm}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-sm} * {scale-text.line-heights.statement.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-sm}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "md": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.md.spacing.xs} / {scale-text.multiplier.statement} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.heading} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.md.spacing.sm} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.heading} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.md.spacing.md} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.heading} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.statement-md}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.md.spacing.md} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.heading} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.md.spacing.lg} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.heading} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.md.spacing.xl} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.heading} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-md} * {scale-text.line-heights.statement.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-md}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-md} * {scale-text.line-heights.statement.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-md}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-md} * {scale-text.line-heights.statement.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-md}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "lg": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.lg.spacing.xs} / {scale-text.multiplier.statement} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.heading} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.lg.spacing.sm} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.heading} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.lg.spacing.md} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.heading} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.statement-lg}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.lg.spacing.md} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.heading} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.lg.spacing.lg} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.heading} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.lg.spacing.xl} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.heading} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-lg} * {scale-text.line-heights.statement.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-lg}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-lg} * {scale-text.line-heights.statement.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-lg}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-lg} * {scale-text.line-heights.statement.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-lg}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "xl": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.xl.spacing.xs} / {scale-text.multiplier.statement} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.heading} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.xl.spacing.sm} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.heading} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.xl.spacing.md} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.heading} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.statement-xl}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.xl.spacing.md} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.heading} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.xl.spacing.lg} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.heading} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.xl.spacing.xl} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.heading} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-xl} * {scale-text.line-heights.statement.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-xl}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-xl} * {scale-text.line-heights.statement.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-xl}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-xl} * {scale-text.line-heights.statement.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-xl}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "2xl": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.2xl.spacing.xs} / {scale-text.multiplier.statement} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.heading} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.2xl.spacing.sm} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.heading} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.statement.2xl.spacing.md} / {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.heading} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.statement-2xl}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.2xl.spacing.md} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.heading} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.2xl.spacing.lg} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.heading} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.statement.2xl.spacing.xl} * {scale-text.multiplier.statement}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.heading} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-2xl} * {scale-text.line-heights.statement.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-2xl}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-2xl} * {scale-text.line-heights.statement.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-2xl}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.statement-2xl} * {scale-text.line-heights.statement.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.statement-2xl}, 3)",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "display": {
+        "sm": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.sm.spacing.xs} / {scale-text.multiplier.display} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.display} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.sm.spacing.sm} / {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.display} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.sm.spacing.md} / {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.display} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.display-sm}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.sm.spacing.md} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.display} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.sm.spacing.lg} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.display} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.sm.spacing.xl} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.display} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-sm} * {scale-text.line-heights.display.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-sm}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-sm} * {scale-text.line-heights.display.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-sm}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-sm} * {scale-text.line-heights.display.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-sm}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "md": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.md.spacing.xs} / {scale-text.multiplier.display} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.display} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.md.spacing.sm} / {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.display} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.md.spacing.md} / {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.display} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.display-md}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.md.spacing.md} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.display} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.md.spacing.lg} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.display} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.md.spacing.xl} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.display} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-md} * {scale-text.line-heights.display.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-md}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-md} * {scale-text.line-heights.display.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-md}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-md} * {scale-text.line-heights.display.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-md}, 3)",
+              "type": "number"
+            }
+          }
+        },
+        "lg": {
+          "spacing": {
+            "2xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.lg.spacing.xs} / {scale-text.multiplier.display} , 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xs} / {scale-text.multipler.display} in em units."
+            },
+            "xs": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.lg.spacing.sm} / {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.sm} / {scale-text.multipler.display} in em units."
+            },
+            "sm": {
+              "type": "number",
+              "value": "floor(roundTo({scale-text.calculated.display.lg.spacing.md} / {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} / {scale-text.multipler.display} in em units."
+            },
+            "md": {
+              "type": "number",
+              "value": "{scale-text.font-size.display-lg}",
+              "description": "1 em of current font size"
+            },
+            "lg": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.lg.spacing.md} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.md} * {scale-text.multipler.display} in em units."
+            },
+            "xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.lg.spacing.lg} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.lg} * {scale-text.multipler.display} in em units."
+            },
+            "2xl": {
+              "type": "number",
+              "value": "ceil(roundTo({scale-text.calculated.display.lg.spacing.xl} * {scale-text.multiplier.display}, 0) / {scale-text.factor.font-size}) * {scale-text.factor.font-size}",
+              "description": "Calculated for Figma - {spacing.xl} * {scale-text.multipler.display} in em units."
+            }
+          },
+          "line-height": {
+            "tight": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-lg} * {scale-text.line-heights.display.tight}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-lg}, 3)",
+              "type": "number"
+            },
+            "comfortable": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-lg} * {scale-text.line-heights.display.comfortable}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-lg}, 3)",
+              "type": "number"
+            },
+            "relaxed": {
+              "value": "roundTo(ceil((({scale-text.font-size.display-lg} * {scale-text.line-heights.display.relaxed}) / {scale-text.factor.line-height})) * {scale-text.factor.line-height} / {scale-text.font-size.display-lg}, 3)",
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

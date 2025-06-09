@@ -1,0 +1,14 @@
+{
+  "fontFamilies": {
+    "fk-display": {
+      "type": "fontFamilies",
+      "value": "FK Display"
+    }
+  },
+  "fontWeights": {
+    "fk-display-regular": {
+      "type": "fontWeights",
+      "value": "Regular"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "media": {
+    "avatar": {
+      "square": {
+        "border-radius": {
+          "type": "dimension",
+          "value": "{density.interaction.radius.sm}"
+        }
+      },
+      "accent": {
+        "background-color": {
+          "value": "{mode.color.accent.container.saturated}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{mode.color.accent.container.transparent}",
+          "type": "color"
+        },
+        "border": {
+          "value": {
+            "color": "{media.avatar.accent.border-color}",
+            "width": "{content.avatar.border-width}",
+            "style": "solid"
+          },
+          "type": "border"
+        }
+      },
+      "image": {
+        "border-color": {
+          "value": "{mode.color.neutral.container.alpha-highlight}",
+          "type": "color"
+        },
+        "border": {
+          "value": {
+            "color": "{media.avatar.image.border-color}",
+            "width": "{content.avatar.border-width}",
+            "style": "solid"
+          },
+          "type": "border"
+        }
+      },
+      "asset": {
+        "color": {
+          "value": "{mode.color.accent.foreground.on-saturated}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "content": {
+    "avatar": {
+      "round": {
+        "border-radius": {
+          "type": "dimension",
+          "value": "{density.interaction.radius.full}"
+        }
+      },
+      "border-width": {
+        "type": "dimension",
+        "value": "{density.interaction.border-width.default}"
+      },
+      "padding-vertical": {
+        "type": "dimension",
+        "value": "{density.interaction.space.half}"
+      },
+      "padding-horizontal": {
+        "type": "dimension",
+        "value": "{density.interaction.space.half}"
+      },
+      "group": {
+        "gap": {
+          "value": "-6px",
+          "type": "dimension"
+        },
+        "count": {
+          "padding-horizontal": {
+            "value": "{density.dimensions.space.1}",
+            "type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}
